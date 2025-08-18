@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>For My Favorite Human</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header>
+      <div class="title">💌 For <span id="bfNameLabel">My Love</span></div>
+      <div class="pill">Made with ❤︎ by <span id="meNameLabel">Me</span></div>
+    </header>
+
+    <div class="grid">
+      <!-- LEFT: QUIZ -->
+      <section class="card">
+        <h2>Mini “Us” Quiz</h2>
+        <p class="muted">Get <strong>3/3</strong> to unlock a sweet note.</p>
+        <div id="quizBox" style="margin-top:10px"></div>
+        <div class="row">
+          <button id="submitQuiz">Check my answers</button>
+          <button class="btn-sec" id="resetQuiz">Reset</button>
+        </div>
+        <div id="quizResult" class="note" style="display:none"></div>
+      </section>
+
+      <!-- RIGHT: GREETING / NAMES -->
+      <section class="card">
+        <h2>Set Names</h2>
+        <p class="muted tiny">He’ll see these at the top.</p>
+        <div class="row">
+          <input id="bfName" type="text" placeholder="Lover's name" />
+          <input id="meName" type="text" placeholder="Your name" />
+        </div>
+        <div class="row">
+          <button id="saveNames">Save</button>
+          <button class="btn-sec" id="clearNames">Clear</button>
+        </div>
+        <div class="note tiny">Tip: everything (quiz, compliments, vouchers) can be edited inside the code—look for the big arrays.</div>
+      </section>
+
+      <!-- LEFT: COMPLIMENT GENERATOR -->
+      <section class="card">
+        <h2>Compliment Generator</h2>
+        <p class="muted">Tap to get showered with words that feel like forehead kisses.</p>
+        <div id="compliment" class="note">Tap the button ↓</div>
+        <div class="row">
+          <button id="newCompliment">Give me a compliment</button>
+        </div>
+        <div class="footer">
+          <span class="badge">Progress: <span id="complimentsCount">0</span></span>
+          <span class="linkish" id="copyCompliment">Copy text</span>
+        </div>
+      </section>
+
+      <!-- RIGHT: SURPRISE VOUCHER SPINNER -->
+      <section class="card">
+        <h2>Surprise Voucher</h2>
+        <p class="muted tiny">Spin to win a treat—redeemable anytime, no expiry 😌</p>
+        <div class="spinner" id="spinner">
+          <div class="spin-item" id="spinItem">Tap “Spin a treat”</div>
+        </div>
+        <div class="row">
+          <button id="spin">Spin a treat</button>
+          <button class="btn-sec" id="saveVoucher">Save voucher</button>
+        </div>
+        <div class="footer">
+          <span class="badge">Saved vouchers: <span id="savedVouchersCount">0</span></span>
+          <span class="linkish" id="showVouchers">Show all</span>
+          <span class="linkish" id="clearVouchers">Clear vouchers</span>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
