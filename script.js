@@ -8,7 +8,7 @@ const QUIZ = [
   {
     q: "Our first inside joke was about…",
     options: ["That gas guy ex", "Pride guy in my compound", "How you bought lip gloss just to talk to me"],
-    answer: 3// 0,1,2 index
+    answer: 2// 0,1,2 index
   },
   {
     q: "Ideal cozy night together:",
